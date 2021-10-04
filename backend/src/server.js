@@ -1,8 +1,11 @@
-import express from 'express'
+import express from "express"
 
 const app = express()
 
-app.get('/hello', (req, res) => res.send('helloooo'))
+app.use(express.json())
 
-app.listen(8000, () => console.log('listening on port 8000'))
+app.get("/hello", (req, res) => res.send("helloooo"))
+app.get("/hello/:name", (req, res) => res.send(`Hello ${req.params.name}`))
+app.post("/hello", (req, res) => res.send(`helloooo ${req.body.name}`))
 
+app.listen(8000, () => console.log("listening on port 8000"))
