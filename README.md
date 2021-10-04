@@ -9,7 +9,7 @@
 
 👤 **cosmin199**
 
-- Github: [@cosmo199](https://github.com/cosmo199)
+- Github: [@cosmo199](https://github.com/cosmin199)
 
 ## Show your support
 
