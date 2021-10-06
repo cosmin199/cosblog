@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import AddCommentForm from "../components/AddCommentForm"
 import ArticlesList from "../components/ArticlesList"
 import CommentsList from "../components/CommentsList"
 import UpvotesSection from "../components/UpvotesSection"
@@ -40,6 +41,7 @@ const ArticlePage = ({ match }) => {
         <p key={key}>{paragraph}</p>
       ))}
       <CommentsList comments={articleInfo.comments} />
+      <AddCommentForm articleName={name} setArticleInfo={setArticleInfo} />
       <h3>other articles:</h3>
       <ArticlesList articles={otherArticles} />
     </>
